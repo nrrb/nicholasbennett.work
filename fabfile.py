@@ -22,10 +22,12 @@ def setup(c, host_ip, key_filename):
     conn.sudo(f"chsh -s $(which zsh) {USER}")
 
     conn.sudo(f"mkdir -p {WEB_ROOT}/assets/images")
+    conn.sudo(f"mkdir -p {WEB_ROOT}/assets/favicons")
     conn.sudo(f"chown -R {USER}:{USER} {WEB_ROOT}")
 
     conn.put("templates/index.html", f"{WEB_ROOT}/index.html")
     conn.put("templates/pro-portrait.jpg", f"{WEB_ROOT}/assets/images/pro-portrait.jpg")
+    conn.put("templates/favicons/", f"{WEB_ROOT}/assets/favicons", recursive=True)
 
     conn.put("templates/nginx.conf", NGINX_CONF, use_sudo=True)
     conn.sudo(f"ln -sf {NGINX_CONF} {NGINX_ENABLED}")
