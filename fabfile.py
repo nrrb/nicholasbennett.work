@@ -48,13 +48,13 @@ def setup(c, host_ip, key_filename):
     conn.sudo(f"chown -R {USER}:{USER} {STATIC_WEB_ROOT}")
     
     # Upload static assets for the landing page; adjust file paths as needed.
-    conn.put("templates/index_static.html", f"{STATIC_WEB_ROOT}/index.html")
-    conn.put("templates/static-pro-portrait.jpg", f"{STATIC_WEB_ROOT}/assets/images/pro-portrait.jpg")
+    conn.put("templates/inde.html", f"{STATIC_WEB_ROOT}/index.html")
+    conn.put("templates/pro-portrait.jpg", f"{STATIC_WEB_ROOT}/assets/images/pro-portrait.jpg")
     conn.put("templates/favicons/", f"{STATIC_WEB_ROOT}/assets/favicons", recursive=True)
     
     # Upload the nginx configuration for the static site.
     # Assume you have a file templates/nginx_static.conf for the static site.
-    conn.put("templates/nginx_static.conf", STATIC_NGINX_CONF, use_sudo=True)
+    conn.put("templates/nginx.conf", STATIC_NGINX_CONF, use_sudo=True)
     conn.sudo(f"ln -sf {STATIC_NGINX_CONF} {NGINX_ENABLED_DIR}/{STATIC_DOMAIN}")
 
     ################################################################################
