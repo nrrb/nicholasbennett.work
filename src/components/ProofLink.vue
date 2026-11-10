@@ -1,5 +1,31 @@
 <script setup>
+import { onBeforeUnmount, onMounted, ref } from 'vue'
+
 defineProps({ item: { type: Object, required: true } })
+
+const video = ref(null)
+let motionPreference
+
+const updatePlayback = () => {
+  video.value.autoplay = !motionPreference.matches
+  if (motionPreference.matches) {
+    video.value.pause()
+    video.value.currentTime = 0
+  } else {
+    video.value.play().catch(() => {
+      // Browser autoplay policies may still prevent playback.
+    })
+  }
+}
+
+onMounted(() => {
+  if (!video.value) return
+  motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)')
+  motionPreference.addEventListener('change', updatePlayback)
+  updatePlayback()
+})
+
+onBeforeUnmount(() => motionPreference?.removeEventListener('change', updatePlayback))
 </script>
 
 <template>
@@ -8,7 +34,7 @@ defineProps({ item: { type: Object, required: true } })
     class="proof"
     v-bind="item.href ? { href: item.href, target: '_blank', rel: 'noopener' } : {}"
   >
-    <video v-if="item.video" class="media" :src="item.video" autoplay muted loop playsinline :aria-label="`${item.title} animated preview`" />
+    <video v-if="item.video" ref="video" class="media" :src="item.video" preload="auto" muted loop playsinline :aria-label="`${item.title} animated preview`" />
     <img v-else-if="item.image" class="media" :src="item.image" :alt="`${item.title} screenshot`" />
     <div v-else class="media placeholder" role="img" aria-label="Image placeholder">
       {{ item.imageHint }}
