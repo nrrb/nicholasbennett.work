@@ -12,9 +12,9 @@ export const person = {
   linkedin: 'https://www.linkedin.com/in/nicholasrrbennett/',
   employers: [
     'CyberMaxx',
+    'Strata Decision Technology',
     'Pear Therapeutics',
     'Kellogg School of Management',
-    'Strata Decision Technology',
   ],
 }
 
@@ -25,11 +25,11 @@ export const doors = {
     audience: 'For Customer Success leaders',
     title: 'Customer Success',
     teaser:
-      '16 years of technical support, plus security software built alongside a CS team.',
+      '16 years of technical support, plus security software built alongside a Customer Success team.',
     cta: 'See the proof',
     label: 'Customer Success',
     headline:
-      "I explain the technical problem in plain language, then stay until it's fixed.",
+      "I explain the technical problem in my audience's language, then own it until it's fixed.",
     introVideo: null, // TODO: URL of the 30 to 45 second intro; hide the button while null
     stats: [
       { value: '16 yrs', label: 'in technical support' },
@@ -41,21 +41,21 @@ export const doors = {
     proof: [
       {
         title: 'Escalations at CyberMaxx',
-        text: 'Turned client feedback from CSMs into fixes shipped weekly.',
+        text: 'Turned client feedback from CSMs into fixes shipped weekly, on customer-facing CyberSight product and backend data integration feeding it.',
         href: null, // TODO: short case study page
         image: '/cybermaxx-cybersight.png',
+      },
+      {
+        title: 'Tiny Goose Club',
+        text: 'A biweekly public meetup I organize and host for fellow creatives.',
+        href: 'https://tinygoose.club/',
+        video: '/tinygooseclub-animated.webm',
       },
       {
         title: 'Medium Talk',
         text: 'An app serving conversation starters for a public picnic I held in Baltimore in 2025.',
         href: 'https://mediumtalk.org/',
         image: '/medium-talk-fan.png',
-      },
-      {
-        title: 'Tiny Goose Club',
-        text: 'A biweekly public meetup I organize and host.',
-        href: 'https://tinygoose.club/',
-        video: '/tinygooseclub-animated.webm',
       },
     ],
     actions: [
@@ -77,12 +77,12 @@ export const doors = {
     audience: 'For engineering managers',
     title: 'Frontend Engineering',
     teaser:
-      'Vue 3 interfaces for production security software, shipped weekly.',
+      'Vue 3 interfaces for production cybersecurity management software, shipped weekly.',
     cta: 'See the work',
     label: 'Frontend engineering',
-    stack: ['Vue 3', 'React Native', 'Chart.js', 'Playwright', 'Python and SQL as needed'],
+    stack: ['Vue 3', 'React Native', 'React', 'Python and SQL as needed'],
     headline:
-      'I build the interfaces customers use, and I can follow a bug into the backend.',
+      'I build the interfaces customers use, and I can follow a bug all the way down to fix it.',
     introVideo: null,
     stats: [
       { value: '~125', label: 'Jira items delivered on an eight-person team' },
@@ -94,28 +94,24 @@ export const doors = {
     // CyberMaxx work is carried by the stats above; no screenshots of it may be shown.
     proof: [
       {
-        title: 'PixelSVG',
-        text: 'Pixel editor in TypeScript, Vue 3 and Pinia.',
-        href: 'https://pixelsvg.surge.sh/',
-        repo: 'https://github.com/nrrb/pixelsvg',
-        image: null, // TODO: screenshot
-        imageHint: 'app screenshot',
+        title: 'Tiny Goose Club',
+        text: 'The custom website for the biweekly public meetup I organize and host for fellow creatives, built with Vue 3. Entirely client-side.',
+        href: 'https://tinygoose.club/',
+        repo: 'https://github.com/nrrb/tinygoose.club',
+        video: '/tinygooseclub-animated.webm',
       },
       {
-        title: 'MITRE ATT&CK Flashcards',
-        text: 'Offline-capable Vue 3 app, 706 techniques.',
-        href: 'https://nrrb.github.io/mitre-flash-cards/',
-        repo: 'https://github.com/nrrb/mitre-flash-cards',
-        image: null, // TODO: screenshot
-        imageHint: 'app screenshot',
+        title: 'Ghost Bass Finder',
+        text: 'A tool to detect subsonic frequencies in your music, built with React. Entirely client-side.',
+        href: 'https://ghostbassfinder.surge.sh/',
+        repo: 'https://github.com/nrrb/ghostbassfinder',
+        video: '/ghostbassfinder-animated.webm',
       },
       {
-        title: 'OG Blacman',
-        text: 'React site for a musician, desktop and mobile.',
-        href: 'https://www.ogblacman.com/',
-        repo: 'https://github.com/nrrb/ogblacman',
-        image: null, // TODO: screenshot
-        imageHint: 'app screenshot',
+        title: 'Medium Talk',
+        text: 'A mobile-first app serving conversation starters for a public picnic I held in Baltimore in 2025, built with Vue 3. Entirely client-side.',
+        href: 'https://mediumtalk.org/',
+        image: '/medium-talk-fan.png',
       },
     ],
     // Swap-ins: Kellogg Board Fellows Optimizer (https://kbfmatcher.surge.sh/),
@@ -123,14 +119,14 @@ export const doors = {
     actions: [
       { label: 'Email Nicholas', kind: 'email', primary: true },
       { label: 'GitHub', kind: 'link', href: 'https://github.com/nrrb' },
-      { label: 'Résumé', kind: 'resume', href: null }, // TODO: SWE résumé PDF
+      { label: 'Resume', kind: 'resume', href: null }, // TODO: SWE resume PDF
     ],
     switchTo: { label: 'Customer Success view', prompt: 'Hiring for Customer Success?', path: '/cs' },
     contactExtra: 'github.com/nrrb',
     meta: {
       title: 'Nicholas Bennett | Frontend Engineer',
       description:
-        'Frontend engineer working in Vue 3, with React Native, Python and SQL experience, and production work in cybersecurity software. Baltimore, MD.',
+        'Frontend engineer working in Vue 3, with React Native, Python, and SQL experience, and production work in cybersecurity software. Baltimore, MD.',
     },
   },
 }
@@ -138,5 +134,5 @@ export const doors = {
 export const landingMeta = {
   title: 'Nicholas Bennett | Customer Success and Frontend Engineering',
   description:
-    'Baltimore-based technical professional open to full-time Customer Success and frontend engineering roles.',
+    'Baltimore-based technical professional open to full-time Customer Success and Frontend Engineering roles.',
 }
