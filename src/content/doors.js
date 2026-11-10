@@ -60,7 +60,7 @@ export const doors = {
     ],
     actions: [
       { label: 'Email Nicholas', kind: 'email', primary: true },
-      { label: 'Résumé', kind: 'resume', href: '/resumes/Nicholas_Bennett_CSM_Resume_Nov2026.pdf' },
+      { label: 'Resume', kind: 'resume', href: '/resumes/Nicholas_Bennett_CSM_Resume_Nov2026.pdf' },
     ],
     switchTo: { label: 'Frontend Engineering view', prompt: 'Hiring an engineer?', path: '/eng' },
     contactExtra: 'Baltimore, MD',
