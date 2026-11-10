@@ -8,7 +8,8 @@ defineProps({ item: { type: Object, required: true } })
     class="proof"
     v-bind="item.href ? { href: item.href, target: '_blank', rel: 'noopener' } : {}"
   >
-    <img v-if="item.image" class="media" :src="item.image" :alt="`${item.title} screenshot`" />
+    <video v-if="item.video" class="media" :src="item.video" autoplay muted loop playsinline :aria-label="`${item.title} animated preview`" />
+    <img v-else-if="item.image" class="media" :src="item.image" :alt="`${item.title} screenshot`" />
     <div v-else class="media placeholder" role="img" aria-label="Image placeholder">
       {{ item.imageHint }}
     </div>

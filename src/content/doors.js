@@ -55,8 +55,7 @@ export const doors = {
         title: 'Tiny Goose Club',
         text: 'A biweekly public meetup I organize and host.',
         href: 'https://tinygoose.club/',
-        image: null, // TODO: photo hosting
-        imageHint: 'photo: you hosting',
+        video: '/tinygooseclub-animated.webm',
       },
     ],
     actions: [
