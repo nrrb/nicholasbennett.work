@@ -43,8 +43,7 @@ export const doors = {
         title: 'Escalations at CyberMaxx',
         text: 'Turned client feedback from CSMs into fixes shipped weekly.',
         href: null, // TODO: short case study page
-        image: null, // TODO: photo working with a team
-        imageHint: 'photo: you with a team',
+        image: '/cybermaxx-cybersight.png',
       },
       {
         title: 'MITRE ATT&CK Flashcards',
