@@ -7,7 +7,7 @@ export const person = {
   email: 'nicholas@nicholasbennett.work',
   status: 'Open to full-time',
   question: 'What are you hiring for?',
-  portrait: null, // TODO: portrait photo URL, looking at camera
+  portrait: '/portrait.jpg',
   github: 'https://github.com/nrrb',
   linkedin: 'https://www.linkedin.com/in/nicholasrrbennett/',
   employers: [
