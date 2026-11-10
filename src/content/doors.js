@@ -46,11 +46,10 @@ export const doors = {
         image: '/cybermaxx-cybersight.png',
       },
       {
-        title: 'MITRE ATT&CK Flashcards',
-        text: 'A study app I built covering 706 techniques.',
-        href: 'https://nrrb.github.io/mitre-flash-cards/',
-        image: null, // TODO: app screenshot
-        imageHint: 'app screenshot',
+        title: 'Medium Talk',
+        text: 'An app serving conversation starters for a public picnic I held in Baltimore in 2025.',
+        href: 'https://mediumtalk.org/',
+        image: '/medium-talk-fan.png',
       },
       {
         title: 'Tiny Goose Club',
