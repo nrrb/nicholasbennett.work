@@ -60,7 +60,7 @@ export const doors = {
     ],
     actions: [
       { label: 'Email Nicholas', kind: 'email', primary: true },
-      { label: 'Résumé', kind: 'resume', href: null }, // TODO: CSM résumé PDF
+      { label: 'Résumé', kind: 'resume', href: '/resumes/Nicholas_Bennett_CSM_Resume_Nov2026.pdf' },
     ],
     switchTo: { label: 'Frontend Engineering view', prompt: 'Hiring an engineer?', path: '/eng' },
     contactExtra: 'Baltimore, MD',
@@ -119,7 +119,7 @@ export const doors = {
     actions: [
       { label: 'Email Nicholas', kind: 'email', primary: true },
       { label: 'GitHub', kind: 'link', href: 'https://github.com/nrrb' },
-      { label: 'Resume', kind: 'resume', href: null }, // TODO: SWE resume PDF
+      { label: 'Resume', kind: 'resume', href: '/resumes/Nicholas_Bennett_Frontend_Software_Engineer_Resume_Nov2026.pdf' },
     ],
     switchTo: { label: 'Customer Success view', prompt: 'Hiring for Customer Success?', path: '/cs' },
     contactExtra: 'github.com/nrrb',

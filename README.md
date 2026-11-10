@@ -36,12 +36,12 @@ Each page includes its own title, description, canonical URL, and Open Graph tag
 - `src/components/`: shared portrait, proof cards, stats, and contact buttons.
 - `src/styles.css`: shared design tokens and global styles.
 - `public/`: portrait, portrait favicon, proof images, WebM previews, and Open Graph images. Reference these assets with root-relative URLs such as `/medium-talk-fan.png`.
+- `public/resumes/`: résumé PDFs linked from the corresponding role pages.
 - `design/`: original layout references and source résumés.
 
 Proof entries accept an `image` or `video` URL. Media appears at desktop widths (960px and above). Video previews are muted, loop inline, and autoplay after checking the motion preference. With reduced motion enabled, they remain paused at the beginning; changes to the preference take effect immediately.
 
 ## Remaining content
 
-- Add Customer Success and Engineering résumé PDFs and set their action URLs in `src/content/doors.js`. Résumé buttons remain hidden while those URLs are null.
 - Write a CyberMaxx escalation case study and set its proof entry's `href`. The card currently shows an image and description without a link.
 - Supply a 30–45 second Customer Success intro video if desired. The intro button remains hidden while `introVideo` is null.
