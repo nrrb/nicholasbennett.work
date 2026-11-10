@@ -1,0 +1,49 @@
+:root {
+  --ground: #EEEDF3;
+  --ink: #1B1830;
+  --ink-2: #37334F;
+  --ink-3: #4A4662;
+  --surface: #FFFFFF;
+  --cs: #F5A524;
+  --eng: #2A2396;
+  --on-eng: #F3F1FC;
+  --on-eng-2: #E4E1F8;
+  --on-eng-3: #D5D1F5;
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Instrument Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --focus: var(--ink);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+h1, p { margin: 0; }
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.mono-label {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@keyframes view-in { from { opacity: 0; } to { opacity: 1; } }
+.view { animation: view-in 0.2s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .view { animation: none; }
+}
