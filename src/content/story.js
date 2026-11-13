@@ -19,7 +19,7 @@ export const copy = {
     title: 'Everything is easier with Nicholas.',
     titleSecond: '',
     intro: 'Customers can count on me to take them seriously, care about what they care about, and run alongside them all the way to the finish line.',
-    background: 'The roots beneath that promise: the experience that gives your words weight, the thread connecting your different roles, and why customer success is the work you want to grow into.',
+    background: "I’m choosing Customer Success because I love helping people accomplish something they were struggling with. Seeing their frustration turn into confidence and delight makes the work meaningful to me.",
     invitation: 'Your invitation to start a conversation',
     resume: 'A link to your resume',
     caption: 'The human quality you want this portrait to introduce',
