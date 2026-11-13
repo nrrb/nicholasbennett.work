@@ -27,7 +27,7 @@ export const copy = {
   },
   proof: [
     {value: '16 years', label: 'Helping the whole Kellogg community work confidently with technology.'},
-    {value: 'The people you supported', label: 'A real measure of your responsibility, naming who relied on you and the setting in which you helped.'},
+    {value: 'Help that fits the person', label: 'I learned what mattered to each person and adapted how I helped. They came back and asked for me.'},
     {value: 'The breadth of your encounters', label: 'A grounded detail from your customer-facing work that makes your ease with people tangible.'},
     {value: 'The thread that connects it', label: 'The shared purpose running through those experiences, expressed in words someone can carry away.'},
   ],
