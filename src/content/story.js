@@ -1,5 +1,5 @@
-// Facts come from design/resumes and Nicholas's own account of his motivations.
-// Intentions remain intentions; no invented customer wins or portfolio ownership.
+// An authoring scaffold: every editorial block describes what Nicholas will write.
+// Identity, employer names, role titles, and functional destinations stay real.
 export const profile = {
   name: 'Nicholas Bennett',
   email: 'nicholas@nicholasbennett.work',
@@ -9,87 +9,146 @@ export const profile = {
   portrait: '/portrait.jpg',
 }
 export const meta = {
-  title: 'Nicholas Bennett | Customer Success & Customer Advocacy',
-  description: 'Customer advocacy, clear communication, and technical depth. Meet Nicholas Bennett, a customer success candidate with 16 years in technical support and software engineering experience.',
+  title: 'Nicholas Bennett | Customer Success Writing Scaffold',
+  description: 'Your search preview: the customer success role you seek, the value you bring to customers, and one grounded reason to open your story.',
+  image: '/portrait.jpg',
+}
+export const copy = {
+  hero: {
+    label: 'Your professional direction and availability',
+    title: 'The kernel of your elevator pitch.',
+    titleSecond: 'What sums you up professionally.',
+    intro: 'Your elevator pitch: who you help, what becomes easier or more valuable with your help, and the qualities that make someone want you in their customers’ corner.',
+    background: 'The roots beneath that promise: the experience that gives your words weight, the thread connecting your different roles, and why customer success is the work you want to grow into.',
+    invitation: 'Your invitation to start a conversation',
+    resume: 'A link to your resume',
+    caption: 'The human quality you want this portrait to introduce',
+  },
+  proof: [
+    {value: 'The depth of your experience', label: 'A verified measure of the time you have spent helping people, with enough context to make it meaningful.'},
+    {value: 'The people you supported', label: 'A real measure of your responsibility, naming who relied on you and the setting in which you helped.'},
+    {value: 'The breadth of your encounters', label: 'A grounded detail from your customer-facing work that makes your ease with people tangible.'},
+    {value: 'The thread that connects it', label: 'The shared purpose running through those experiences, expressed in words someone can carry away.'},
+  ],
+  story: {
+    label: 'An introduction to the thread through your work',
+    title: 'The human purpose that gives your career its shape.',
+    paragraphs: [
+      'The kind of moment that makes work feel worthwhile to you: what you notice in another person, what draws you into helping, and what you hope they feel when the conversation ends.',
+      'A bridge into your work history: how that motivation has followed you through different roles, and the question you want the reader to carry into the stories ahead.',
+    ],
+  },
+  human: {
+    label: 'The same motivation in a different setting',
+    title: 'What your work with people revealed about the work you want.',
+    paragraphs: [
+      'A moment from driving Uber: a passenger’s need or uncertainty, how you read the situation, and the choice you made to help them feel comfortable. Let a real interaction reveal your attentiveness.',
+      'A moment from Trader Joe’s: something you noticed about a customer, how you responded within your role, and what you could observe afterward. Show the care inside an ordinary exchange.',
+      'The realization those encounters left with you: why listening and building relationships deserve a larger place in your working life, and how that understanding draws you toward customer success.',
+    ],
+  },
+  community: {
+    artwork: 'The feeling you want someone to leave with.',
+    artworkCaption: 'A small phrase that holds your community’s promise',
+    label: 'Tiny Goose Club · Your role in creating a place to belong',
+    title: 'The possibility you wanted to make room for.',
+    paragraphs: [
+      'Why you started Tiny Goose Club: the kind of creative companionship you wanted for yourself and others, the barriers you noticed, and what an equitable, safe place means to you in practice.',
+      'A real choice you have made as a host: how you welcome someone, make participation easier, or respond to a need. Describe what you did and what you observed, leaving room for what you are still learning.',
+      'The connection to customer success: what creating this space teaches you about listening, earning trust, and helping someone pursue a goal that belongs to them.',
+    ],
+    link: 'A link to the community you are building',
+  },
+  approach: {
+    label: 'The strengths your stories have earned the right to name',
+    title: 'How your care becomes something someone can rely on.',
+    intro: 'A short introduction to how you work: the habits a customer or colleague could expect from you, grounded in the examples above and connected to the value you want to help customers find.',
+  },
+  contact: {
+    label: 'The next chapter you want to write',
+    title: 'The future you are inviting someone to build with you.',
+    paragraphs: [
+      'The role and company you hope to find: the customers you want to serve, the work you want more of, and the convictions you hope to share with the people building the product.',
+      'Your closing invitation: who should reach out, what you would enjoy learning about their customers, and the possibility you hope a first conversation might open.',
+    ],
+    email: 'An invitation to write to you',
+    linkedin: 'A link to your LinkedIn profile',
+  },
+  footer: 'A final human note in your own voice, leaving a little warmth after the story ends.',
 }
 export const chapters = [
   {
-    id: 'support', number: '01',
-    company: 'Northwestern University · Kellogg School of Management',
+    id: 'support', number: '01', company: 'Northwestern University · Kellogg School of Management',
     role: 'Technical support · Faculty Computing Support Lead',
-    title: 'Start with the person who needs a hand.',
+    title: 'The moment you learned what being dependable feels like to someone else.',
     paragraphs: [
-      'A technical problem arrives in the middle of somebody’s day. They have work to do, and something is standing in the way. My job in support was to understand what was happening, explain it clearly, and help them move forward.',
-      'Across 16 years in technical support, I learned how much the human part of that work means to me. At Kellogg, I supported 300 faculty across six campuses. Resolving urgent problems and building relationships were part of the same responsibility.',
+      'A real support encounter at Northwestern or Kellogg: what a person needed to accomplish, what had gone wrong, and the pressure or uncertainty surrounding the technical problem.',
+      'How you listened and made the next step understandable. Describe the action you took, the follow-through you provided, and what you actually saw change for that person.',
     ],
-    takeaway: 'Trust starts when someone feels heard and knows what happens next.',
-    evidence: '16 years in technical support · 300 faculty across six campuses at Kellogg',
+    takeaway: 'The lesson about trust you carried forward, expressed as something you learned through helping that person.',
+    evidence: 'A verified detail that anchors the story: the people supported, the scope of your responsibility, or an observable result.',
   },
   {
-    id: 'kellogg', number: '02', company: 'Kellogg School of Management',
-    role: 'Full Stack Developer',
-    title: 'Keep listening. There may be a better way.',
+    id: 'kellogg', number: '02', company: 'Kellogg School of Management', role: 'Full Stack Developer',
+    title: 'The need you heard beneath the request, and the possibility it opened.',
     paragraphs: [
-      'Supporting people also gave me opportunities to see needs beyond the immediate request. I built a search portal and a student internship-matching tool to address some of those needs.',
-      'Later, as a developer, I built applications supporting 1,200 MBA students. The work meant translating stakeholder needs into practical workflows. It gave me another way to help: understand what people are trying to accomplish, then build something they can use.',
+      'The people and workflow behind a Kellogg application: what they were trying to do, where the existing process became difficult, and how you came to understand the need.',
+      'The choices you made with stakeholders and the usable result you built together. Describe what the software enabled, and separate the outcome you observed from the benefit you hoped it would bring.',
     ],
-    takeaway: 'Understanding the goal gives a solution its purpose.',
-    evidence: 'Applications supporting 1,200 MBA students',
+    takeaway: 'What this experience taught you about discovering a goal before choosing a solution.',
+    evidence: 'A confirmed application, audience, or workflow that gives the reader something concrete to remember.',
   },
   {
-    id: 'pear', number: '03', company: 'Pear Therapeutics',
-    role: 'Product Support Engineer',
-    title: 'Give a difficult problem somewhere to go.',
+    id: 'pear', number: '03', company: 'Pear Therapeutics', role: 'Product Support Engineer',
+    title: 'The care involved in making someone’s problem understandable to the next person.',
     paragraphs: [
-      'At Pear, I investigated interface defects in a cloud-based therapy platform. I wrote JavaScript reproduction cases so engineers could investigate the problems people were encountering.',
-      'I also created Jira dashboards that made more than 4,000 issues visible and supported prioritization. Clear information helped connect a reported problem to the people who could work on it. That experience is part of how I approach customer advocacy: make the issue understandable and give the next person what they need to act.',
+      'An actual issue at Pear: how it surfaced, who was affected, and what another team needed to understand before they could investigate.',
+      'How you turned the issue into reproducible evidence or useful visibility. Explain your contribution to the handoff and what happened next, naming only the outcome you can substantiate.',
     ],
-    takeaway: 'A useful escalation makes it easier for other people to help.',
-    evidence: 'Issue reproduction and dashboards exposing 4,000+ issues',
+    takeaway: 'The lesson about advocacy and clear communication that this experience left with you.',
+    evidence: 'A verified reproduction case, dashboard, or scope detail that supports the account without overstating your impact.',
   },
   {
-    id: 'strata', number: '04', company: 'Strata Decision Technology',
-    role: 'Senior Optimization Consultant',
-    title: 'Learn the work the software needs to support.',
+    id: 'strata', number: '04', company: 'Strata Decision Technology', role: 'Senior Optimization Consultant',
+    title: 'The work behind the software, and how you learned to see it through a customer’s eyes.',
     paragraphs: [
-      'At Strata, I investigated customer problems in healthcare software using SQL and Excel, along with data integration and configuration. The questions were grounded in the workflows customers needed to carry out.',
-      'That is a perspective I want to bring to customer success: learn what a customer needs to accomplish, understand where the software fits, and help them make progress toward that goal.',
+      'A specific customer workflow you investigated at Strata: the task the software needed to support, the obstacle you encountered, and the questions that helped you understand it.',
+      'The investigation or configuration work you contributed and what it revealed. Keep the account proportionate to your involvement, including an observed result or an insight you carried forward.',
     ],
-    takeaway: 'Software becomes valuable in the context of somebody’s work.',
-    evidence: 'Healthcare software · Customer workflow investigation',
+    takeaway: 'What you learned about connecting a technical question to the work a customer needs to accomplish.',
+    evidence: 'A real workflow, investigation, or tool used, with the context that makes the detail relevant.',
   },
   {
-    id: 'cybermaxx', number: '05', company: 'CyberMaxx',
-    role: 'Software Engineer · Frontend team',
-    title: 'Carry the customer’s voice into the product.',
+    id: 'cybermaxx', number: '05', company: 'CyberMaxx', role: 'Software Engineer · Frontend team',
+    title: 'The experience that brought the customer’s voice into focus, and clarified your own direction.',
     paragraphs: [
-      'At CyberMaxx, I worked closely with Customer Success to gather customer feedback, accelerate escalations, and turn reported problems into fixes and enhancements. Those relationships helped clarify where I wanted to take my career.',
-      'I built customer-facing security dashboards and downloadable historical reports for CyberSight, a portal serving a client base of approximately 400 companies. I also built a MITRE ATT&CK matrix that let customers explore security cases by technique. Each feature gave me a concrete way to make information more accessible to the people using it.',
-      'Engineering gave me the technical depth to investigate problems and talk comfortably with the people building the product. I want to bring that understanding closer to the customer, helping them use the software with confidence and advocating for what they need.',
+      'A real collaboration with Customer Success at CyberMaxx: the customer need or escalation, how it reached you, and the questions that made the underlying problem clearer.',
+      'How you worked with others to move it forward: the feedback you translated, the fix or feature you contributed, and the customer-facing capability that resulted. Describe your part precisely.',
+      'What you discovered about yourself in that work: why advocating for customers and building relationships draws you toward CSM, and how your engineering experience will help you serve them.',
     ],
-    takeaway: 'Customer feedback deserves a clear path into the work.',
-    evidence: 'Customer Success collaboration · Customer-facing reporting and security workflows',
+    takeaway: 'The conviction this experience gave you about the work you want to do next.',
+    evidence: 'A confirmed feature or observable outcome. If you use the portal’s client count, distinguish it from a personally managed customer portfolio.',
   },
 ]
 export const strengths = [
   {
-    title: 'Listen for the goal.',
-    text: 'Get curious about what someone is trying to accomplish. My support and consulting work taught me to pay attention to the workflow around the question.',
-    href: '#strata', link: 'Customer workflows at Strata',
+    title: 'The curiosity that helps you find the real goal.',
+    text: 'Name how you listen and the questions you ask. Connect those habits to a specific moment when understanding someone’s work changed how you approached their problem.',
+    href: '#strata', link: 'The story that makes this strength visible',
   },
   {
-    title: 'Make the technical understandable.',
-    text: 'Explain the problem in language the person can use. Years of technical support give me a foundation for helping customers feel more capable with software.',
-    href: '#support', link: 'Technical support at Kellogg',
+    title: 'The clarity that helps someone feel more capable.',
+    text: 'Describe how you adapt an explanation to the person in front of you, and what you look for to know they understand. Ground the strength in your support experience.',
+    href: '#support', link: 'The support experience behind this strength',
   },
   {
-    title: 'Advocate across teams.',
-    text: 'Make customer needs clear enough for a team to act on. At CyberMaxx, I worked with Customer Success to connect feedback and escalations to product improvements.',
-    href: '#cybermaxx', link: 'Customer advocacy at CyberMaxx',
+    title: 'The advocacy that carries a customer’s need forward.',
+    text: 'Describe how you make a customer’s problem clear and actionable across teams. Show how you balance persistence with respect for the colleagues helping you resolve it.',
+    href: '#cybermaxx', link: 'The collaboration that demonstrates this strength',
   },
   {
-    title: 'Make the next step easier.',
-    text: 'Give the next person useful context. At Pear, I made defects reproducible and issues visible so engineering could investigate and prioritize the work.',
-    href: '#pear', link: 'Product support at Pear',
+    title: 'The follow-through that makes help dependable.',
+    text: 'Describe how you preserve context and make the next action easier. Use a real example to show what ownership looks like within your responsibility.',
+    href: '#pear', link: 'The handoff that gives this strength substance',
   },
 ]

@@ -1,6 +1,6 @@
 <script setup>
 import { useHead } from '@unhead/vue'
-import { chapters, meta, profile, strengths } from '../content/story.js'
+import { chapters, copy, meta, profile, strengths } from '../content/story.js'
 import { pageHead } from '../head.js'
 import ArrowIcon from '../components/ArrowIcon.vue'
 useHead(pageHead(meta, '/', 'cs'))
@@ -19,32 +19,28 @@ useHead(pageHead(meta, '/', 'cs'))
     <main id="main">
       <section class="hero wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Customer Success · Open to opportunities</p>
-          <h1 id="hero-title">An advocate for your customers.<br /><span>A partner in their progress.</span></h1>
-          <p class="hero-intro">I’m Nicholas. I want your customers to feel heard, use your software with confidence, and see how it helps them do the work they care about.</p>
-          <p class="hero-background">I bring 16 years in technical support and experience building software alongside Customer Success. Now I’m pursuing a role where those customer relationships are at the center of my work.</p>
+          <p class="eyebrow">{{ copy.hero.label }}</p>
+          <h1 id="hero-title">{{ copy.hero.title }}<br /><span>{{ copy.hero.titleSecond }}</span></h1>
+          <p class="hero-intro">{{ copy.hero.intro }}</p>
+          <p class="hero-background">{{ copy.hero.background }}</p>
           <div class="actions">
-            <a class="button primary" :href="`mailto:${profile.email}`">Let’s talk about your customers <ArrowIcon /></a>
-            <a class="text-link" :href="profile.resume">Read my resume <ArrowIcon /></a>
+            <a class="button primary" :href="`mailto:${profile.email}`">{{ copy.hero.invitation }} <ArrowIcon /></a>
+            <a class="text-link" :href="profile.resume">{{ copy.hero.resume }} <ArrowIcon /></a>
           </div>
         </div>
         <figure class="hero-portrait">
           <div class="portrait-frame"><img :src="profile.portrait" alt="Nicholas Bennett" width="600" height="600" fetchpriority="high" /></div>
-          <figcaption><span class="mono-label">A people person with technical depth</span><span>{{ profile.location }}</span></figcaption>
+          <figcaption><span class="mono-label">{{ copy.hero.caption }}</span><span>{{ profile.location }}</span></figcaption>
         </figure>
       </section>
       <div class="credibility wrap" aria-label="Experience at a glance">
-        <p><strong>16 years</strong><span>in technical support</span></p>
-        <p><strong>300 faculty</strong><span>supported across six Kellogg campuses</span></p>
-        <p><strong>4,000+ rides</strong><span>as an Uber driver</span></p>
-        <p><strong>One thread</strong><span>helping people move forward</span></p>
+        <p v-for="item in copy.proof" :key="item.value"><strong>{{ item.value }}</strong><span>{{ item.label }}</span></p>
       </div>
       <section id="story" class="story-section wrap" aria-labelledby="story-title">
         <div class="section-intro">
-          <p class="eyebrow">The thread through my work</p>
-          <h2 id="story-title">There’s a person<br />on the other side.</h2>
-          <p>The most fulfilling part of my work has always been getting to know that person. Understanding what’s difficult. Helping them feel heard. Finding a way forward together.</p>
-          <p>That thread has followed me from technical support into engineering, and through some very different jobs along the way.</p>
+          <p class="eyebrow">{{ copy.story.label }}</p>
+          <h2 id="story-title">{{ copy.story.title }}</h2>
+          <p v-for="paragraph in copy.story.paragraphs" :key="paragraph">{{ paragraph }}</p>
         </div>
         <div class="chapters">
           <article v-for="chapter in chapters" :id="chapter.id" :key="chapter.id" class="chapter">
@@ -57,26 +53,22 @@ useHead(pageHead(meta, '/', 'cs'))
       </section>
       <section class="human-section" aria-labelledby="human-title">
         <div class="wrap human-grid">
-          <div><p class="eyebrow">The work beyond the job title</p><h2 id="human-title">People have always<br />been the interesting part.</h2></div>
+          <div><p class="eyebrow">{{ copy.human.label }}</p><h2 id="human-title">{{ copy.human.title }}</h2></div>
           <div class="human-copy">
-            <p>I’ve also driven more than 4,000 Uber rides and worked at Trader Joe’s. I found real fulfillment in the everyday interactions: getting absorbed in a conversation, learning how someone sees the world, and helping them feel a little lighter.</p>
-            <p>Those experiences help explain why I’m drawn to customer success. I want a working life with more opportunities to listen closely and build relationships.</p>
-            <p class="human-note">Technical depth helps me understand the product. Curiosity about people gives me a reason to care how it’s working for them.</p>
+            <p v-for="(paragraph, index) in copy.human.paragraphs" :key="paragraph" :class="{ 'human-note': index === 2 }">{{ paragraph }}</p>
           </div>
         </div>
       </section>
       <section class="community-section wrap" aria-labelledby="community-title">
-        <div class="community-art" aria-hidden="true"><span class="community-message">A little room<br />for possibility.</span><span class="mono-label">Tiny Goose Club · Baltimore</span></div>
+        <div class="community-art" aria-hidden="true"><span class="community-message">{{ copy.community.artwork }}</span><span class="mono-label">{{ copy.community.artworkCaption }}</span></div>
         <div class="community-copy">
-          <p class="eyebrow">Tiny Goose Club · Organizer &amp; host</p><h2 id="community-title">Make room for<br />other people to succeed.</h2>
-          <p>I organize and host Tiny Goose Club, a biweekly public creative meetup in Baltimore. I want an equitable, safe place where we can work on our creative endeavors and encourage each other along the way.</p>
-          <p>That includes me. I want to be part of a community where people can bring something unfinished, find companionship in the work, and feel that their ambitions are worth pursuing.</p>
-          <p>It’s a motivation I carry into my professional life, too: help create the conditions for someone else to make progress.</p>
-          <a class="text-link" href="https://tinygoose.club/">Meet Tiny Goose Club <ArrowIcon /></a>
+          <p class="eyebrow">{{ copy.community.label }}</p><h2 id="community-title">{{ copy.community.title }}</h2>
+          <p v-for="paragraph in copy.community.paragraphs" :key="paragraph">{{ paragraph }}</p>
+          <a class="text-link" href="https://tinygoose.club/">{{ copy.community.link }} <ArrowIcon /></a>
         </div>
       </section>
       <section id="approach" class="approach-section wrap" aria-labelledby="approach-title">
-        <div class="approach-heading"><p class="eyebrow">What I bring to Customer Success</p><h2 id="approach-title">Care, made practical.</h2><p>Care becomes tangible in the work. These are the habits I bring from my experience so far.</p></div>
+        <div class="approach-heading"><p class="eyebrow">{{ copy.approach.label }}</p><h2 id="approach-title">{{ copy.approach.title }}</h2><p>{{ copy.approach.intro }}</p></div>
         <div class="strengths">
           <article v-for="(strength, index) in strengths" :key="strength.title" class="strength">
             <span class="mono-label">0{{ index + 1 }}</span><h3>{{ strength.title }}</h3><p>{{ strength.text }}</p>
@@ -86,15 +78,14 @@ useHead(pageHead(meta, '/', 'cs'))
       </section>
       <section id="contact" class="contact-section" aria-labelledby="contact-title">
         <div class="wrap contact-inner">
-          <p class="eyebrow">The next chapter</p><h2 id="contact-title">Help your customers<br />see what’s possible.</h2>
-          <p>I’m looking for a Customer Success role at a company that cares deeply about who it’s building for and why. I want to learn what success means to your customers and help them get more value from your software.</p>
-          <p>If you’re looking for someone who enjoys people, understands technical complexity, and wants to advocate for your customers, I’d love to meet you.</p>
-          <div class="actions"><a class="button primary" :href="`mailto:${profile.email}`">Email Nicholas <ArrowIcon /></a><a class="text-link" :href="profile.linkedin">Connect on LinkedIn <ArrowIcon /></a></div>
+          <p class="eyebrow">{{ copy.contact.label }}</p><h2 id="contact-title">{{ copy.contact.title }}</h2>
+          <p v-for="paragraph in copy.contact.paragraphs" :key="paragraph">{{ paragraph }}</p>
+          <div class="actions"><a class="button primary" :href="`mailto:${profile.email}`">{{ copy.contact.email }} <ArrowIcon /></a><a class="text-link" :href="profile.linkedin">{{ copy.contact.linkedin }} <ArrowIcon /></a></div>
           <a class="visible-email" :href="`mailto:${profile.email}`">{{ profile.email }}</a>
         </div>
       </section>
     </main>
-    <footer class="site-footer wrap"><span>Made with curiosity. Nicholas Bennett · {{ profile.location }}</span><a :href="profile.resume">Resume <ArrowIcon /></a><a href="#main">Back to the beginning <ArrowIcon /></a></footer>
+    <footer class="site-footer wrap"><span>{{ copy.footer }}</span><a :href="profile.resume">Resume <ArrowIcon /></a><a href="#main">Back to the beginning <ArrowIcon /></a></footer>
   </div>
 </template>
 
@@ -110,7 +101,7 @@ nav a { padding-block: 12px; }
 .hero .eyebrow { display: flex; align-items: center; gap: 9px; margin-bottom: 22px; }
 .status-dot { width: 8px; height: 8px; background: #37634c; border-radius: 50%; flex: none; }
 h1, h2, h3 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.045em; }
-h1 { font-size: clamp(42px, 4.6vw, 65px); line-height: 1.06; }
+h1 { font-size: clamp(38px, 4vw, 56px); line-height: 1.06; }
 h1 span { color: var(--ink-2); }
 .hero-intro { font-size: 21px; line-height: 1.6; margin-top: 25px; max-width: 630px; }
 .hero-background { font-size: 16px; line-height: 1.75; color: var(--ink-2); margin-top: 18px; max-width: 590px; }
@@ -149,7 +140,7 @@ h3 { font-size: 29px; line-height: 1.18; margin: 22px 0 18px; }
 .human-copy .human-note { color: var(--surface); font-size: 21px; line-height: 1.6; margin-top: 28px; margin-bottom: 0; }
 .community-section { display: grid; grid-template-columns: .8fr 1fr; gap: 100px; align-items: center; padding-block: 100px; }
 .community-art { min-height: 365px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: var(--cs); border-radius: 150px 150px 8px 8px; }
-.community-message { font-family: var(--font-display); font-weight: 800; font-size: 52px; line-height: 1.1; letter-spacing: -.045em; text-align: center; }
+.community-message { font-family: var(--font-display); font-weight: 800; font-size: 42px; line-height: 1.15; padding-inline: 24px; letter-spacing: -.045em; text-align: center; }
 .community-art .mono-label { padding-inline: 20px; text-align: center; }
 .community-copy > p:not(.eyebrow) { color: var(--ink-2); font-size: 16px; line-height: 1.85; margin-bottom: 16px; }
 .approach-section { padding-block: 60px 110px; border-top: 1px solid #c8c5d1; }
