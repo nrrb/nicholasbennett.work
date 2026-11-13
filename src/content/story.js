@@ -22,7 +22,7 @@ export const copy = {
     background: "I’m choosing Customer Success because I love helping people accomplish something they were struggling with. Seeing their frustration turn into confidence and delight makes the work meaningful to me.",
     invitation: 'Say hi',
     invitationDetail: 'Tell me what you wish were easier for your customers. Let’s talk about how I could help.',
-    resume: 'A link to your resume',
+    resume: 'Read my resume.',
     caption: 'The human quality you want this portrait to introduce',
   },
   proof: [
@@ -70,9 +70,7 @@ export const copy = {
     title: 'The future you are inviting someone to build with you.',
     paragraphs: [
       'The role and company you hope to find: the customers you want to serve, the work you want more of, and the convictions you hope to share with the people building the product.',
-      'Your closing invitation: who should reach out, what you would enjoy learning about their customers, and the possibility you hope a first conversation might open.',
     ],
-    email: 'An invitation to write to you',
     linkedin: 'A link to your LinkedIn profile',
   },
   footer: 'A final human note in your own voice, leaving a little warmth after the story ends.',

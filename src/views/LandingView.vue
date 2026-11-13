@@ -82,12 +82,13 @@ useHead({ ...previewHead, meta: [...previewHead.meta, { name: 'robots', content:
         <div class="wrap contact-inner">
           <p class="eyebrow">{{ copy.contact.label }}</p><h2 id="contact-title">{{ copy.contact.title }}</h2>
           <p v-for="paragraph in copy.contact.paragraphs" :key="paragraph">{{ paragraph }}</p>
-          <div class="actions"><a class="button primary" :href="`mailto:${profile.email}`">{{ copy.contact.email }} <ArrowIcon /></a><a class="text-link" :href="profile.linkedin">{{ copy.contact.linkedin }} <ArrowIcon /></a></div>
+          <div class="actions"><a class="button primary" :href="`mailto:${profile.email}`" aria-describedby="contact-invitation">{{ copy.hero.invitation }} <ArrowIcon /></a><a class="text-link" :href="profile.linkedin">{{ copy.contact.linkedin }} <ArrowIcon /></a></div>
+          <p id="contact-invitation" class="contact-invitation">{{ copy.hero.invitationDetail }}</p>
           <a class="visible-email" :href="`mailto:${profile.email}`">{{ profile.email }}</a>
         </div>
       </section>
     </main>
-    <footer class="site-footer wrap"><span>{{ copy.footer }}</span><a :href="profile.resume">Resume <ArrowIcon /></a><a href="#main">Back to the beginning <ArrowIcon /></a></footer>
+    <footer class="site-footer wrap"><span>{{ copy.footer }}</span><a :href="profile.resume">{{ copy.hero.resume }} <ArrowIcon /></a><a href="#main">Back to the beginning <ArrowIcon /></a></footer>
   </div>
 </template>
 
