@@ -26,7 +26,7 @@ export const copy = {
     caption: 'You have my full attention.',
   },
   proof: [
-    {value: 'The depth of your experience', label: 'A verified measure of the time you have spent helping people, with enough context to make it meaningful.'},
+    {value: '16 years', label: 'Helping the whole Kellogg community work confidently with technology.'},
     {value: 'The people you supported', label: 'A real measure of your responsibility, naming who relied on you and the setting in which you helped.'},
     {value: 'The breadth of your encounters', label: 'A grounded detail from your customer-facing work that makes your ease with people tangible.'},
     {value: 'The thread that connects it', label: 'The shared purpose running through those experiences, expressed in words someone can carry away.'},
