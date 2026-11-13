@@ -15,7 +15,7 @@ export const meta = {
 }
 export const copy = {
   hero: {
-    label: 'Your professional direction and availability',
+    label: 'Technical Customer Success · Open to opportunities',
     title: 'Everything is easier with Nicholas.',
     titleSecond: '',
     intro: 'Customers can count on me to take them seriously, care about what they care about, and run alongside them all the way to the finish line.',
