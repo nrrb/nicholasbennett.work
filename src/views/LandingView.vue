@@ -3,14 +3,15 @@ import { useHead } from '@unhead/vue'
 import { chapters, copy, meta, profile, strengths } from '../content/story.js'
 import { pageHead } from '../head.js'
 import ArrowIcon from '../components/ArrowIcon.vue'
-useHead(pageHead(meta, '/', 'cs'))
+const previewHead = pageHead(meta, '/dev-preview', 'cs')
+useHead({ ...previewHead, meta: [...previewHead.meta, { name: 'robots', content: 'noindex, nofollow' }] })
 </script>
 
 <template>
   <div class="story-page view">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header wrap">
-      <a class="wordmark" href="/" aria-label="Nicholas Bennett home">Nicholas Bennett.</a>
+      <a class="wordmark" href="/dev-preview" aria-label="Nicholas Bennett preview home">Nicholas Bennett.</a>
       <nav aria-label="Main navigation">
         <a href="#story">My story</a><a href="#approach">How I work</a>
         <a class="nav-contact" href="#contact">Let’s talk <ArrowIcon /></a>

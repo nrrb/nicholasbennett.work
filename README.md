@@ -30,3 +30,9 @@ The current draft uses verified examples and Nicholas's stated motivations. Spec
 ## Current copy direction
 
 The site is now a writing scaffold. All editorial copy lives in `src/content/story.js` as specific, evocative descriptions of what Nicholas should write in each position. Preserve this mode until Nicholas supplies or requests final copy. Do not substitute sample finished prose. Keep identity, employer/role labels, navigation, accessible image descriptions, and working link destinations accurate. Social previews use the portrait so old finished copy is not carried in a preview graphic.
+
+## Working preview and parked production
+
+The exact writing scaffold from commit c452d61 (immediately before the parking page) remains in `src/content/story.js` and `src/views/LandingView.vue`. Continue its development at `/dev-preview` using `npm run dev`. The preview has its own canonical path and a noindex/nofollow directive. The name link returns to the preview rather than the parking page.
+
+`/`, `/cs`, and `/eng` render `ParkingView.vue`. Automatic Vercel deployments remain disabled. Saving this route to GitHub does not publish it on Vercel. Do not deploy `/dev-preview` or replace the parking page without Nicholas's explicit instruction. A noindex directive is not access control.
