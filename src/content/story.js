@@ -23,7 +23,7 @@ export const copy = {
     invitation: 'Say hi',
     invitationDetail: 'Tell me what you wish were easier for your customers. Let’s talk about how I could help.',
     resume: 'Read my resume.',
-    caption: 'The human quality you want this portrait to introduce',
+    caption: 'You have my full attention.',
   },
   proof: [
     {value: 'The depth of your experience', label: 'A verified measure of the time you have spent helping people, with enough context to make it meaningful.'},
