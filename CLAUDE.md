@@ -1,6 +1,6 @@
 # Publication policy
 
-The public website must show only the parking page until Nicholas explicitly asks to publish a finished replacement. Do not enable automatic Vercel deployments, merge a change to release the draft, or publish work-in-progress copy. Keep `git.deploymentEnabled` false in vercel.json on every working branch. The narrative writing scaffold remains in src/content/story.js and src/views/LandingView.vue for offline development. The public routes use ParkingView.vue.
+Follow AGENTS.md. Work on feature branches with Vercel previews and pull requests. Nicholas has disabled automatic production-domain assignment. CI builds only; it must never deploy. Merging requires Nicholas’s instruction, and promotion to the live domain requires his explicit go-live authorization. Keep the parking page live until then.
 
 # Nicholas Bennett · Customer Success portfolio
 
@@ -10,7 +10,7 @@ The current brief supersedes the old Two Doors design: the site is entirely focu
 
 Vue 3 with script setup, Vue Router, Vite, vite-ssg, and plain CSS. Public narrative copy is in `src/content/story.js`; layout and community copy are in `src/views/LandingView.vue`. The old door content and layouts are unused historical source. The original design mockups describe the superseded two-role site.
 
-Prerender `/`, `/cs`, and `/eng` with the same Customer Success page and canonical `/`. Preserve old resume links. Vercel clean URLs must resolve generated pages.
+Prerender `/`, `/cs`, and `/eng` as the parking page. Prerender `/dev-preview` as the writing scaffold, with its own canonical path and noindex/nofollow. Preserve old resume links. Vercel clean URLs must resolve generated pages.
 
 ## Design
 
