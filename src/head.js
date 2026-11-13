@@ -3,7 +3,7 @@ const ORIGIN = 'https://nicholasbennett.work'
 
 export function pageHead(meta, path, ogName) {
   const url = ORIGIN + path
-  const image = `${ORIGIN}/og/${ogName}.png`
+  const image = meta.image ? `${ORIGIN}${meta.image}` : `${ORIGIN}/og/${ogName}.png`
   return {
     title: meta.title,
     link: [{ rel: 'canonical', href: url }],

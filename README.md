@@ -26,3 +26,7 @@ The old door components and content are retained as unused source history; they 
 Use `design/resumes/` and Nicholas's own accounts as sources. Preserve actual job titles. Keep approximately 400 client companies distinct from a personally managed book of business. Do not invent retention, expansion, adoption, customer satisfaction, or revenue results. Do not publish CyberMaxx screenshots or private conversations as testimonials.
 
 The current draft uses verified examples and Nicholas's stated motivations. Specific customer anecdotes can deepen the story after Nicholas supplies the situation, his actions, and the observed result. Keep goals and intentions clearly distinct from demonstrated outcomes.
+
+## Current copy direction
+
+The site is now a writing scaffold. All editorial copy lives in `src/content/story.js` as specific, evocative descriptions of what Nicholas should write in each position. Preserve this mode until Nicholas supplies or requests final copy. Do not substitute sample finished prose. Keep identity, employer/role labels, navigation, accessible image descriptions, and working link destinations accurate. Social previews use the portrait so old finished copy is not carried in a preview graphic.

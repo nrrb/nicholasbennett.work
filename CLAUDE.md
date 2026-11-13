@@ -21,3 +21,7 @@ Plain, specific, warm first-person writing. Avoid em dashes and canned branding 
 ## Verification
 
 Run `npm run build` after changes. Verify prerendered metadata, root and legacy routes, anchor targets, local assets, and contact/resume links. Visually inspect layout when browser preview is available. Run lint only when requested.
+
+## Current copy direction
+
+The site is now a writing scaffold. All editorial copy lives in `src/content/story.js` as specific, evocative descriptions of what Nicholas should write in each position. Preserve this mode until Nicholas supplies or requests final copy. Do not substitute sample finished prose. Keep identity, employer/role labels, navigation, accessible image descriptions, and working link destinations accurate. Social previews use the portrait so old finished copy is not carried in a preview graphic.
