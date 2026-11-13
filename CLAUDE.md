@@ -1,3 +1,7 @@
+# Publication policy
+
+The public website must show only the parking page until Nicholas explicitly asks to publish a finished replacement. Do not enable automatic Vercel deployments, merge a change to release the draft, or publish work-in-progress copy. Keep `git.deploymentEnabled` false in vercel.json on every working branch. The narrative writing scaffold remains in src/content/story.js and src/views/LandingView.vue for offline development. The public routes use ParkingView.vue.
+
 # Nicholas Bennett · Customer Success portfolio
 
 The current brief supersedes the old Two Doors design: the site is entirely focused on Customer Success. Build an encouraging personal narrative grounded in real work, with customer advocacy and software value as the central themes. Engineering is supporting evidence of technical depth. Preserve accurate job titles.
