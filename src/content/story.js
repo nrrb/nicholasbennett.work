@@ -29,7 +29,7 @@ export const copy = {
     {value: '16 years', label: 'Helping the whole Kellogg community work confidently with technology.'},
     {value: 'Help that fits the person', label: 'I learned what mattered to each person and adapted how I helped. They came back and asked for me.'},
     {value: 'Care before they have to ask', label: 'A small check-in can change someone’s whole experience. I make people feel welcome, whether they want a conversation or a little quiet.'},
-    {value: 'The thread that connects it', label: 'The shared purpose running through those experiences, expressed in words someone can carry away.'},
+    {value: 'Confidence that carries forward', label: 'I want people to leave with understanding they can build on, more confidence in themselves, and the reassurance that they can ask for help.'},
   ],
   story: {
     label: 'An introduction to the thread through your work',
