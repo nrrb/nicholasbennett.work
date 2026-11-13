@@ -21,7 +21,7 @@ useHead({ ...previewHead, meta: [...previewHead.meta, { name: 'robots', content:
       <section class="hero wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">{{ copy.hero.label }}</p>
-          <h1 id="hero-title">{{ copy.hero.title }}<br /><span>{{ copy.hero.titleSecond }}</span></h1>
+          <h1 id="hero-title">{{ copy.hero.title }}<template v-if="copy.hero.titleSecond"><br /><span>{{ copy.hero.titleSecond }}</span></template></h1>
           <p class="hero-intro">{{ copy.hero.intro }}</p>
           <p class="hero-background">{{ copy.hero.background }}</p>
           <div class="actions">

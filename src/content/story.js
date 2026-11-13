@@ -16,9 +16,9 @@ export const meta = {
 export const copy = {
   hero: {
     label: 'Your professional direction and availability',
-    title: 'The kernel of your elevator pitch.',
-    titleSecond: 'What sums you up professionally.',
-    intro: 'Your elevator pitch: who you help, what becomes easier or more valuable with your help, and the qualities that make someone want you in their customers’ corner.',
+    title: 'Everything is easier with Nicholas.',
+    titleSecond: '',
+    intro: 'Customers can count on me to take them seriously, care about what they care about, and run alongside them all the way to the finish line.',
     background: 'The roots beneath that promise: the experience that gives your words weight, the thread connecting your different roles, and why customer success is the work you want to grow into.',
     invitation: 'Your invitation to start a conversation',
     resume: 'A link to your resume',
