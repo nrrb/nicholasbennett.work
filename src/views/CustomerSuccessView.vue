@@ -89,7 +89,7 @@ useHead({
         </figure>
         <div class="lg:col-start-1 lg:row-start-2 lg:self-start">
           <h1 id="hero-title" class="m-0 text-4xl font-semibold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">Technical depth.<br /><span class="text-electric-600">A customer’s advocate.</span></h1>
-          <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">I built the security software customers rely on. Now I’m bringing that engineering experience into Customer Success to help people understand the product, work through obstacles, and get more from it.</p>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">I built the security software customers rely on. Now I’m bringing that engineering experience into Customer Success to help people understand the product, overcome obstacles, and thrive with it.</p>
           <div class="mt-8 flex flex-wrap gap-3">
             <a href="#case-studies" @click="scrollToSection($event, 'case-studies')" class="inline-flex min-h-12 items-center gap-3 rounded-lg bg-electric-600 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-electric-700">View Case Studies <svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m7 10 5 5 5-5M12 4v11" /></svg></a>
             <a :href="contact.resume" download class="inline-flex min-h-12 items-center rounded-lg border border-solid border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-electric-600 hover:text-electric-700">Download Resume</a>
