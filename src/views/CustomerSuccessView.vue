@@ -17,7 +17,7 @@ const navigation = [
 const metrics = [
   { value: 'Nearly two decades', label: 'Helping customers succeed', detail: 'Customer-facing experience spanning technical support, software, retail, and service.' },
   { value: '~400', label: 'Companies served by CyberSight', detail: 'The customer base of the portal I built features for at CyberMaxx.' },
-  { value: '3 SIEMs', label: 'Rule-management interfaces delivered', detail: 'Elastic, Devo, and AlienVault USM within the Aegis security operations platform.' },
+  { value: '1,200 students', label: 'Software built around people’s needs', detail: 'Built applications for MBA students by translating stakeholder needs into practical workflows.' },
 ]
 const cases = [
   {
@@ -80,7 +80,7 @@ useHead({
     <main id="main">
       <section aria-labelledby="hero-title" class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-x-12 gap-y-8 px-6 pt-6 pb-16 lg:grid-cols-[1.3fr_1fr] lg:gap-y-0 lg:px-8 lg:py-24">
         <div class="lg:self-end">
-          <p class="mb-0 lg:mb-6 inline-flex rounded-full border border-solid border-electric-100 bg-electric-50 px-3 py-2 text-xs font-semibold leading-relaxed text-electric-700 sm:text-sm">Technical Customer Success | Cybersecurity &amp; SaaS</p>
+          <p class="mb-0 lg:mb-6 inline-flex rounded-full border border-solid border-electric-100 bg-electric-50 px-3 py-2 text-xs font-semibold leading-relaxed text-electric-700 sm:text-sm">Technical Customer Success | B2B SaaS</p>
 
         </div>
         <figure class="m-0 w-full max-w-md justify-self-center lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:justify-self-end">
