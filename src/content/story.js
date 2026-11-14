@@ -34,7 +34,7 @@ export const copy = {
   ],
   story: {
     label: 'An introduction to the thread through your work',
-    title: 'The human purpose that gives your career its shape.',
+    title: 'The more I learned about people, the more I loved helping them.',
     paragraphs: [
       'The kind of moment that makes work feel worthwhile to you: what you notice in another person, what draws you into helping, and what you hope they feel when the conversation ends.',
       'A bridge into your work history: how that motivation has followed you through different roles, and the question you want the reader to carry into the stories ahead.',
