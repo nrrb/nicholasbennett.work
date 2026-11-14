@@ -31,7 +31,7 @@ useHead({ ...previewHead, meta: [...previewHead.meta, { name: 'robots', content:
           <p id="hero-invitation" class="hero-invitation">{{ copy.hero.invitationDetail }}</p>
         </div>
         <figure class="hero-portrait">
-          <div class="portrait-frame"><img :src="profile.portrait" alt="Nicholas Bennett" width="600" height="600" fetchpriority="high" /></div>
+          <div class="portrait-frame"><img :src="profile.portrait" :srcset="`${profile.portraitSmall} 360w, ${profile.portrait} 720w`" sizes="(max-width: 720px) 254px, 360px" alt="Nicholas Bennett" width="720" height="960" fetchpriority="high" /></div>
           <figcaption><span class="mono-label">{{ copy.hero.caption }}</span><span>{{ profile.location }}</span></figcaption>
         </figure>
       </section>

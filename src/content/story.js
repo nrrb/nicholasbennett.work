@@ -6,12 +6,13 @@ export const profile = {
   location: 'Baltimore, MD',
   linkedin: 'https://www.linkedin.com/in/nicholasrrbennett/',
   resume: '/resumes/Nicholas_Bennett_CSM_Resume_Nov2026.pdf',
-  portrait: '/portrait.jpg',
+  portrait: '/portrait.webp',
+  portraitSmall: '/portrait-small.webp',
 }
 export const meta = {
   title: 'Nicholas Bennett | Customer Success Writing Scaffold',
   description: 'Your search preview: the customer success role you seek, the value you bring to customers, and one grounded reason to open your story.',
-  image: '/portrait.jpg',
+  image: '/portrait-share.jpg',
 }
 export const copy = {
   hero: {
