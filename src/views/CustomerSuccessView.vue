@@ -78,9 +78,16 @@ useHead({
       </div>
     </header>
     <main id="main">
-      <section aria-labelledby="hero-title" class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-[1.3fr_1fr] lg:gap-12 lg:px-8 lg:py-24">
-        <div>
-          <p class="mb-6 inline-flex rounded-full border border-solid border-blue-100 bg-blue-50 px-3 py-2 text-xs font-semibold leading-relaxed text-blue-700 sm:text-sm">Technical Customer Success | Cybersecurity &amp; SaaS</p>
+      <section aria-labelledby="hero-title" class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-x-12 gap-y-8 px-6 py-16 lg:grid-cols-[1.3fr_1fr] lg:gap-y-0 lg:px-8 lg:py-24">
+        <div class="lg:self-end">
+          <p class="mb-0 lg:mb-6 inline-flex rounded-full border border-solid border-blue-100 bg-blue-50 px-3 py-2 text-xs font-semibold leading-relaxed text-blue-700 sm:text-sm">Technical Customer Success | Cybersecurity &amp; SaaS</p>
+
+        </div>
+        <figure class="m-0 w-full max-w-md justify-self-center lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:justify-self-end">
+          <img src="/portrait.webp" srcset="/portrait-small.webp 360w, /portrait.webp 720w" sizes="(max-width: 496px) calc(100vw - 48px), 448px" width="720" height="960" fetchpriority="high" alt="Nicholas Bennett smiling" class="block aspect-square h-auto w-full rounded-2xl border border-solid border-slate-200 object-cover object-[center_25%] shadow-lg" />
+          <figcaption class="mt-4 flex items-center justify-between gap-4 text-xs text-slate-500"><span>You have my full attention.</span><span class="font-medium text-blue-700">Open to opportunities</span></figcaption>
+        </figure>
+        <div class="lg:col-start-1 lg:row-start-2 lg:self-start">
           <h1 id="hero-title" class="m-0 text-4xl font-semibold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">Technical depth.<br /><span class="text-blue-600">A customer’s advocate.</span></h1>
           <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">I built the security software customers rely on. Now I’m bringing that engineering experience into Customer Success to help people understand the product, work through obstacles, and get more from it.</p>
           <div class="mt-8 flex flex-wrap gap-3">
@@ -89,10 +96,7 @@ useHead({
           </div>
           <p class="mt-6 text-sm text-slate-500">Former Software Engineer, CyberMaxx · Baltimore, MD</p>
         </div>
-        <figure class="m-0 w-full max-w-md justify-self-center lg:justify-self-end">
-          <img src="/portrait.webp" srcset="/portrait-small.webp 360w, /portrait.webp 720w" sizes="(max-width: 496px) calc(100vw - 48px), 448px" width="720" height="960" fetchpriority="high" alt="Nicholas Bennett smiling" class="block aspect-square h-auto w-full rounded-2xl border border-solid border-slate-200 object-cover object-[center_25%] shadow-lg" />
-          <figcaption class="mt-4 flex items-center justify-between gap-4 text-xs text-slate-500"><span>You have my full attention.</span><span class="font-medium text-blue-700">Open to opportunities</span></figcaption>
-        </figure>
+
       </section>
 
       <section aria-label="Experience and delivery at a glance" class="mx-auto max-w-6xl px-6 lg:px-8">
