@@ -26,7 +26,7 @@ export const copy = {
     caption: 'You have my full attention.',
   },
   proof: [
-    {value: '16 years', label: 'Helping the whole Kellogg community work confidently with technology.'},
+    {value: '16 years', label: 'Helping people across Kellogg get on with the work that mattered to them.'},
     {value: 'Help that fits the person', label: 'I learned what mattered to each person and adapted how I helped. They came back and asked for me.'},
     {value: 'Care before they have to ask', label: 'A small check-in can change someone’s whole experience. I make people feel welcome, whether they want a conversation or a little quiet.'},
     {value: 'Confidence that carries forward', label: 'I want people to leave with understanding they can build on, more confidence in themselves, and the reassurance that they can ask for help.'},
