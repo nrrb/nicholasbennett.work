@@ -55,3 +55,7 @@ Review the Vercel preview before each merge. GitHub's check confirms the build; 
 - `public/`: existing portrait, resume PDFs, and other assets.
 
 The unused two-door components and original design mockups are historical source. Preserve actual job titles and factual distinctions. Do not invent customer outcomes or testimonials, or publish CyberMaxx screenshots. Keep the self-descriptive, evocative placeholders until Nicholas supplies or requests finished copy.
+
+### Narrative design studies
+
+Preview-only routes `/version1`, `/version2`, and `/version3` compare editorial, evidence-first, and personal-letter presentations of the shorter Customer Success narrative. They share copy in `src/content/versions.js` and a responsive view in `src/views/VersionView.vue`. All three are marked noindex/nofollow. The CyberMaxx case retains explicit writing prompts until a concrete customer outcome is supplied. `/dev-preview` preserves the earlier full scaffold. Production routes remain parked; promotion still requires explicit authorization.
