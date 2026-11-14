@@ -15,7 +15,7 @@ const navigation = [
   { label: 'Contact', id: 'contact' },
 ]
 const metrics = [
-  { value: '16 years', label: 'Helping people use technology', detail: 'Technical support grounded in understanding the person and the work they need to do.' },
+  { value: 'Nearly two decades', label: 'Helping customers succeed', detail: 'Customer-facing experience spanning technical support, software, retail, and service.' },
   { value: '~400', label: 'Companies served by CyberSight', detail: 'The customer base of the portal I built features for at CyberMaxx.' },
   { value: '3 SIEMs', label: 'Rule-management interfaces delivered', detail: 'Elastic, Devo, and AlienVault USM within the Aegis security operations platform.' },
 ]
