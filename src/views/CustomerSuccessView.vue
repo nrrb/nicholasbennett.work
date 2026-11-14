@@ -16,7 +16,7 @@ const navigation = [
 ]
 const metrics = [
   { value: 'Nearly two decades', label: 'Helping customers succeed', detail: 'Customer-facing experience spanning technical support, software, retail, and service.' },
-  { value: '~400', label: 'Companies served by CyberSight', detail: 'The customer base of the portal I built features for at CyberMaxx.' },
+  { value: 'Hundreds', label: 'Organizations served by CyberMaxx', detail: 'Built customer-facing software at an MSSP serving hundreds of organizations.' },
   { value: 'Thousands of people', label: 'Different roles. Individual attention.', detail: 'Supported 300 faculty, 400 staff, and thousands of MBA and PhD students over the years at Kellogg.' },
 ]
 const cases = [
@@ -125,7 +125,7 @@ useHead({
               <div class="mt-6 flex flex-wrap gap-2"><span v-for="tag in study.tags" :key="tag" class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">{{ tag }}</span></div>
             </article>
           </div>
-          <p class="mt-5 max-w-3xl text-xs leading-relaxed text-slate-500">Outcomes describe capabilities delivered. The ~400-company figure is the portal’s customer base, not a personally managed book of business. Retention, adoption, and alert-volume changes were not measured in these examples.</p>
+          <p class="mt-5 max-w-3xl text-xs leading-relaxed text-slate-500">Outcomes describe capabilities delivered. Retention, adoption, and alert-volume changes were not measured in these examples.</p>
           <article aria-labelledby="pear-title" class="mt-10 grid grid-cols-1 gap-4 border-t border-solid border-slate-200 pt-8 md:grid-cols-[1fr_1.6fr] md:gap-8">
             <div><p class="mb-2 text-xs font-semibold uppercase tracking-widest text-electric-700">Healthcare SaaS</p><h3 id="pear-title" class="m-0 text-lg font-semibold text-slate-900">Pear Therapeutics</h3><p class="mt-1 text-sm text-slate-500">Product Support Engineer</p></div>
             <p class="text-sm leading-7 text-slate-600">I turned technical issues in a cloud-based therapy platform into reproducible cases for engineering. I also built Jira dashboards that made more than 4,000 issues visible for prioritization.</p>
