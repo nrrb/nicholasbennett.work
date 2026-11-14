@@ -59,3 +59,30 @@ The unused two-door components and original design mockups are historical source
 ### Narrative design studies
 
 Preview-only routes `/version1`, `/version2`, and `/version3` compare editorial, evidence-first, and personal-letter presentations of the shorter Customer Success narrative. They share copy in `src/content/versions.js` and a responsive view in `src/views/VersionView.vue`. All three are marked noindex/nofollow. The CyberMaxx case retains explicit writing prompts until a concrete customer outcome is supplied. `/dev-preview` preserves the earlier full scaffold. Production routes remain parked; promotion still requires explicit authorization.
+
+### Technical Customer Success profile (`/cs`)
+
+Complete Vue 3 component: `src/views/CustomerSuccessView.vue`. It includes its copy, semantic navigation, reduced-motion-aware anchor scrolling, optimized portrait, working resume download, and contact links. Tailwind 4 is installed through `@tailwindcss/vite` in `vite.config.js`; the component imports `src/styles/customer-success.css`. The CSS entry scans this component only and omits Preflight to preserve the older pages. For a different app that already imports Tailwind globally, omit that CSS import and retain the template utility classes.
+
+Exact route in the existing ViteSSG/Vue Router configuration (`src/main.js`):
+
+```js
+{ path: '/cs', component: () => import('./views/CustomerSuccessView.vue') },
+```
+
+Keep the other route entries. ViteSSG constructs Vue Router with `ViteSSG(App, { routes })`; do not add a second router. The homepage remains ParkingView. Required public files are `/portrait.webp`, `/portrait-small.webp`, `/portrait-share.jpg`, and `/resumes/Nicholas_Bennett_CSM_Resume_Nov2026.pdf`.
+
+`npm run build` prerenders `dist/cs.html`. Existing Vercel configuration is sufficient for direct navigation and refresh at `/cs`:
+
+```json
+{
+  "cleanUrls": true,
+  "git": { "deploymentEnabled": true }
+}
+```
+
+Do not add a catch-all rewrite to index.html for this SSG application: index.html is the parked homepage and each profile route has its own HTML. If adapting this component to a separate, client-only SPA without prerendering, that application may instead need `"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]`.
+
+Evidence: case studies use the Sublime MDR for Email reporting integration and MITRE ATT&CK case filtering described in `design/resumes/`. Metrics are 16 years of technical support, the portal's approximately 400-company customer base, and three SIEM rule-management interfaces. The portal count is not a personal customer portfolio. Adoption, alert-volume reductions, and retention uplift are not claimed. Onboarding is described as the approach Nicholas would bring to a CSM role.
+
+This route remains noindex/nofollow on the preview branch. Production promotion remains a separate, explicitly authorized step.

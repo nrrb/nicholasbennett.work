@@ -10,7 +10,7 @@ The current brief supersedes the old Two Doors design: the site is entirely focu
 
 Vue 3 with script setup, Vue Router, Vite, vite-ssg, and plain CSS. Public narrative copy is in `src/content/story.js`; layout and community copy are in `src/views/LandingView.vue`. The old door content and layouts are unused historical source. The original design mockups describe the superseded two-role site.
 
-Prerender `/`, `/cs`, and `/eng` as the parking page. Prerender `/dev-preview` as the writing scaffold, with its own canonical path and noindex/nofollow. Preserve old resume links. Vercel clean URLs must resolve generated pages.
+Prerender `/` and `/eng` as the parking page. `/cs` is the authorized Technical Customer Success preview, built with Tailwind utilities in CustomerSuccessView.vue. Prerender `/dev-preview` as the writing scaffold, with its own canonical path and noindex/nofollow. Preserve old resume links. Vercel clean URLs must resolve generated pages.
 
 ## Design
 
@@ -29,3 +29,7 @@ Run `npm run build` after changes. Verify prerendered metadata, root and legacy 
 ## Current copy direction
 
 The site is now a writing scaffold. All editorial copy lives in `src/content/story.js` as specific, evocative descriptions of what Nicholas should write in each position. Preserve this mode until Nicholas supplies or requests final copy. Do not substitute sample finished prose. Keep identity, employer/role labels, navigation, accessible image descriptions, and working link destinations accurate. Social previews use the portrait so old finished copy is not carried in a preview graphic.
+
+## Dedicated Technical Customer Success page
+
+The November 14 brief authorizes finished, evidence-based copy and a slate/blue B2B SaaS design for `/cs`. Use `src/views/CustomerSuccessView.vue`; its Tailwind CSS entry is `src/styles/customer-success.css`. Tailwind is configured without Preflight to preserve existing pages. Earlier design and placeholder-copy requirements continue to apply to their respective drafts, not this new route. Do not invent retention, onboarding, or alert-reduction results.
