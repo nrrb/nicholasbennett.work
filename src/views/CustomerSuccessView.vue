@@ -17,7 +17,7 @@ const navigation = [
 const metrics = [
   { value: 'Nearly two decades', label: 'Helping customers succeed', detail: 'Customer-facing experience spanning technical support, software, retail, and service.' },
   { value: '~400', label: 'Companies served by CyberSight', detail: 'The customer base of the portal I built features for at CyberMaxx.' },
-  { value: '1,200 students', label: 'Software built around people’s needs', detail: 'Built applications for MBA students by translating stakeholder needs into practical workflows.' },
+  { value: 'Thousands of people', label: 'Different roles. Individual attention.', detail: 'Supported 300 faculty, 400 staff, and thousands of MBA and PhD students over the years at Kellogg.' },
 ]
 const cases = [
   {
