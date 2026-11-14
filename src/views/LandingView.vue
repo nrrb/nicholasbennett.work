@@ -21,16 +21,17 @@ useHead({ ...previewHead, meta: [...previewHead.meta, { name: 'robots', content:
       <section class="hero wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">{{ copy.hero.label }}</p>
-          <h1 id="hero-title">{{ copy.hero.title }}<br /><span>{{ copy.hero.titleSecond }}</span></h1>
+          <h1 id="hero-title">{{ copy.hero.title }}<template v-if="copy.hero.titleSecond"><br /><span>{{ copy.hero.titleSecond }}</span></template></h1>
           <p class="hero-intro">{{ copy.hero.intro }}</p>
           <p class="hero-background">{{ copy.hero.background }}</p>
           <div class="actions">
-            <a class="button primary" :href="`mailto:${profile.email}`">{{ copy.hero.invitation }} <ArrowIcon /></a>
+            <a class="button primary" :href="`mailto:${profile.email}`" aria-describedby="hero-invitation">{{ copy.hero.invitation }} <ArrowIcon /></a>
             <a class="text-link" :href="profile.resume">{{ copy.hero.resume }} <ArrowIcon /></a>
           </div>
+          <p id="hero-invitation" class="hero-invitation">{{ copy.hero.invitationDetail }}</p>
         </div>
         <figure class="hero-portrait">
-          <div class="portrait-frame"><img :src="profile.portrait" alt="Nicholas Bennett" width="600" height="600" fetchpriority="high" /></div>
+          <div class="portrait-frame"><img :src="profile.portrait" :srcset="`${profile.portraitSmall} 360w, ${profile.portrait} 720w`" sizes="(max-width: 720px) 254px, 360px" alt="Nicholas Bennett" width="720" height="960" fetchpriority="high" /></div>
           <figcaption><span class="mono-label">{{ copy.hero.caption }}</span><span>{{ profile.location }}</span></figcaption>
         </figure>
       </section>
@@ -81,12 +82,13 @@ useHead({ ...previewHead, meta: [...previewHead.meta, { name: 'robots', content:
         <div class="wrap contact-inner">
           <p class="eyebrow">{{ copy.contact.label }}</p><h2 id="contact-title">{{ copy.contact.title }}</h2>
           <p v-for="paragraph in copy.contact.paragraphs" :key="paragraph">{{ paragraph }}</p>
-          <div class="actions"><a class="button primary" :href="`mailto:${profile.email}`">{{ copy.contact.email }} <ArrowIcon /></a><a class="text-link" :href="profile.linkedin">{{ copy.contact.linkedin }} <ArrowIcon /></a></div>
+          <div class="actions"><a class="button primary" :href="`mailto:${profile.email}`" aria-describedby="contact-invitation">{{ copy.hero.invitation }} <ArrowIcon /></a><a class="text-link" :href="profile.linkedin">{{ copy.contact.linkedin }} <ArrowIcon /></a></div>
+          <p id="contact-invitation" class="contact-invitation">{{ copy.hero.invitationDetail }}</p>
           <a class="visible-email" :href="`mailto:${profile.email}`">{{ profile.email }}</a>
         </div>
       </section>
     </main>
-    <footer class="site-footer wrap"><span>{{ copy.footer }}</span><a :href="profile.resume">Resume <ArrowIcon /></a><a href="#main">Back to the beginning <ArrowIcon /></a></footer>
+    <footer class="site-footer wrap"><span>{{ copy.footer }}</span><a :href="profile.resume">{{ copy.hero.resume }} <ArrowIcon /></a><a href="#main">Back to the beginning <ArrowIcon /></a></footer>
   </div>
 </template>
 
@@ -111,6 +113,7 @@ h1 span { color: var(--ink-2); }
 .primary { background: var(--ink); color: var(--surface); }
 .button:hover { background: var(--ink-2); }
 .text-link { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; border-bottom: 1px solid currentColor; font-weight: 600; font-size: 14px; }
+.hero-invitation { margin-top: 16px; font-size: 15px; line-height: 1.7; color: var(--ink-2); max-width: 560px; }
 .hero-portrait { margin: 0; transform: rotate(2deg); }
 .portrait-frame { border-radius: 48% 48% 8px 8px; background: var(--cs); padding: 18px 18px 0; overflow: hidden; }
 .portrait-frame img { display: block; width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; border-radius: 48% 48% 0 0; }
