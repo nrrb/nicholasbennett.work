@@ -109,11 +109,14 @@ useHead({
 
       <section id="about" tabindex="-1" aria-labelledby="about-title" class="mx-auto grid max-w-6xl scroll-mt-40 grid-cols-1 gap-8 px-6 py-16 md:scroll-mt-24 lg:grid-cols-[1fr_1.4fr] lg:gap-20 lg:px-8 lg:py-24">
         <div><p class="mb-4 text-xs font-bold uppercase tracking-widest text-electric-700">About</p><h2 id="about-title" class="m-0 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">The work starts with<br />the person using it.</h2></div>
-        <div class="space-y-5 text-base leading-relaxed text-slate-600"><p>At CyberMaxx, I worked alongside Customer Success while building CyberSight customer reporting and Aegis security operations tools. I learned how customer feedback becomes an engineering investigation, a clearer workflow, or a feature someone can actually use.</p><article aria-labelledby="pear-title" class="border-l-2 border-solid border-electric-600 bg-white p-5 sm:p-6"><p class="mb-2 text-xs font-semibold uppercase tracking-widest text-electric-700">Healthcare SaaS · Product support</p><h3 id="pear-title" class="m-0 text-base font-semibold text-slate-900">Pear Therapeutics · Product Support Engineer</h3><p class="mt-3 text-sm leading-7 text-slate-600">I investigated technical issues in a cloud-based therapy platform and created reproducible cases so engineering could act on them. I also built Jira dashboards that made more than 4,000 issues visible for prioritization.</p></article><p>Before that, 16 years in technical support taught me to take people seriously and adapt to their priorities. I’m deliberately choosing Customer Success because listening and building relationships are the parts of the work I want to do more of.</p><p class="font-medium text-slate-900">My promise: understand what matters to the customer, make the next step clear, and stay with the problem through the finish line.</p></div>
+        <div class="flex flex-col gap-6 text-base leading-relaxed text-slate-600">
+          <p>Nearly two decades of customer-facing work taught me to listen closely and care about what people are trying to accomplish.</p>
+          <p>At CyberMaxx, working alongside Customer Success showed me where I wanted to go next. I’m bringing my engineering experience into a role centered on relationships, helping customers overcome obstacles and thrive.</p>
+        </div>
       </section>
 
       <section id="case-studies" tabindex="-1" aria-labelledby="cases-title" class="scroll-mt-40 border-y border-solid border-slate-200 bg-white px-6 py-16 md:scroll-mt-24 lg:px-8 lg:py-24">
-        <div class="mx-auto max-w-6xl"><div class="max-w-2xl"><p class="mb-4 text-xs font-bold uppercase tracking-widest text-electric-700">Case studies / CyberMaxx</p><h2 id="cases-title" class="m-0 text-3xl font-semibold tracking-tight sm:text-4xl">Engineering work.<br />Customer-facing value.</h2><p class="mt-5 text-base leading-relaxed text-slate-600">Two examples of making managed security software easier to understand and use. My role in each was Software Engineer, working within the product and engineering team.</p></div>
+        <div class="mx-auto max-w-6xl"><div class="max-w-2xl"><p class="mb-4 text-xs font-bold uppercase tracking-widest text-electric-700">Selected work</p><h2 id="cases-title" class="m-0 text-3xl font-semibold tracking-tight sm:text-4xl">Technical work.<br />Customer-facing value.</h2><p class="mt-5 text-base leading-relaxed text-slate-600">Two examples of making managed security software easier to understand and use. My role in each was Software Engineer, working within the product and engineering team.</p></div>
           <div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
             <article v-for="study in cases" :key="study.number" class="flex flex-col rounded-2xl border border-solid border-slate-200 bg-white p-6 sm:p-8">
               <div class="flex items-center justify-between gap-4"><p class="text-xs font-semibold uppercase tracking-widest text-electric-700">{{ study.category }}</p><span class="text-sm font-medium text-slate-400">{{ study.number }}</span></div>
@@ -123,6 +126,10 @@ useHead({
             </article>
           </div>
           <p class="mt-5 max-w-3xl text-xs leading-relaxed text-slate-500">Outcomes describe capabilities delivered. The ~400-company figure is the portal’s customer base, not a personally managed book of business. Retention, adoption, and alert-volume changes were not measured in these examples.</p>
+          <article aria-labelledby="pear-title" class="mt-10 grid grid-cols-1 gap-4 border-t border-solid border-slate-200 pt-8 md:grid-cols-[1fr_1.6fr] md:gap-8">
+            <div><p class="mb-2 text-xs font-semibold uppercase tracking-widest text-electric-700">Healthcare SaaS</p><h3 id="pear-title" class="m-0 text-lg font-semibold text-slate-900">Pear Therapeutics</h3><p class="mt-1 text-sm text-slate-500">Product Support Engineer</p></div>
+            <p class="text-sm leading-7 text-slate-600">I turned technical issues in a cloud-based therapy platform into reproducible cases for engineering. I also built Jira dashboards that made more than 4,000 issues visible for prioritization.</p>
+          </article>
         </div>
       </section>
 
