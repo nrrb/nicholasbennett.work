@@ -78,7 +78,7 @@ useHead({
       </div>
     </header>
     <main id="main">
-      <section aria-labelledby="hero-title" class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-x-12 gap-y-8 px-6 py-16 lg:grid-cols-[1.3fr_1fr] lg:gap-y-0 lg:px-8 lg:py-24">
+      <section aria-labelledby="hero-title" class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-x-12 gap-y-8 px-6 pt-6 pb-16 lg:grid-cols-[1.3fr_1fr] lg:gap-y-0 lg:px-8 lg:py-24">
         <div class="lg:self-end">
           <p class="mb-0 lg:mb-6 inline-flex rounded-full border border-solid border-blue-100 bg-blue-50 px-3 py-2 text-xs font-semibold leading-relaxed text-blue-700 sm:text-sm">Technical Customer Success | Cybersecurity &amp; SaaS</p>
 
