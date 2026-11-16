@@ -16,7 +16,7 @@ const navigation = [
 ]
 const metrics = [
   { value: 'Nearly two decades', label: 'Helping customers succeed', detail: 'Customer-facing experience spanning technical support, software, retail, and service.' },
-  { value: '3 months', label: 'Missing reports restored', detail: 'Expanded two customer-reported issues into a fix for historical reporting across 300+ client accounts.' },
+  { value: 'Engineering depth', label: 'Customer advocacy backed by technical fluency', detail: 'Hands-on experience building software, tracing problems through code and data, and working with engineering to resolve them.' },
   { value: 'Thousands of people', label: 'Different roles. Individual attention.', detail: 'Supported 300 faculty, 400 staff, and thousands of MBA and PhD students over the years at Kellogg.' },
 ]
 const cases = [
