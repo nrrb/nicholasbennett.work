@@ -2,5 +2,37 @@
   "cleanUrls": true,
   "git": {
     "deploymentEnabled": true
-  }
+  },
+  "redirects": [
+    {
+      "source": "/cs",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/eng",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/dev-preview",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/version1",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/version2",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/version3",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
 }

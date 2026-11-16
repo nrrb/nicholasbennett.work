@@ -1,0 +1,11 @@
+/* No global reset: existing portfolio designs retain their original styling. */
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' source(none);
+@source '../views/CustomerSuccessView.vue';
+@theme {
+  --color-electric-50: #f4f0ff;
+  --color-electric-100: #e4d9ff;
+  --color-electric-600: #6025ff;
+  --color-electric-700: #4b16d6;
+  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+}
