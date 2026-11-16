@@ -125,10 +125,6 @@ useHead({
               <div class="mt-6 flex flex-wrap gap-2"><span v-for="tag in study.tags" :key="tag" class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">{{ tag }}</span></div>
             </article>
           </div>
-          <article aria-labelledby="pear-title" class="mt-10 grid grid-cols-1 gap-4 border-t border-solid border-slate-200 pt-8 md:grid-cols-[1fr_1.6fr] md:gap-8">
-            <div><p class="mb-2 text-xs font-semibold uppercase tracking-widest text-electric-700">Healthcare SaaS</p><h3 id="pear-title" class="m-0 text-lg font-semibold text-slate-900">Pear Therapeutics</h3><p class="mt-1 text-sm text-slate-500">Product Support Engineer</p></div>
-            <p class="text-sm leading-7 text-slate-600">I investigated onboarding and account issues across Salesforce and external services, coordinated engineering escalations, and kept Patient Services informed. My Jira dashboards saved our support manager hours of weekly reporting and let colleagues check issue status without waiting for an update.</p>
-          </article>
         </div>
       </section>
 
