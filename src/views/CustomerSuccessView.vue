@@ -56,9 +56,10 @@ function scrollToSection(event, id) {
 }
 useHead({
   title: 'Nicholas Bennett | Technical Customer Success',
+  link: [{ rel: 'canonical', href: 'https://nicholasbennett.work/' }],
   meta: [
     { name: 'description', content: 'Nicholas Bennett brings nearly two decades of customer-facing experience and software engineering depth to Technical Customer Success. Explore examples of advocacy, problem solving, and follow-through.' },
-    { name: 'robots', content: 'noindex, nofollow' },
+    { name: 'robots', content: 'index, follow' },
     { property: 'og:title', content: 'Nicholas Bennett | Technical Customer Success' },
     { property: 'og:image', content: 'https://nicholasbennett.work/portrait-share.jpg' },
   ],
@@ -70,7 +71,7 @@ useHead({
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:p-4 focus:text-electric-700">Skip to content</a>
     <header class="sticky top-0 z-30 border-b border-solid border-slate-200 bg-white/80 backdrop-blur-md">
       <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-6 py-4 lg:px-8">
-        <a href="/cs" class="text-lg font-bold tracking-tight text-slate-900">Nicholas Bennett<span class="text-electric-600">.</span></a>
+        <a href="/" class="text-lg font-bold tracking-tight text-slate-900">Nicholas Bennett<span class="text-electric-600">.</span></a>
         <nav aria-label="Main navigation" class="order-3 flex w-full items-center justify-between gap-4 md:order-none md:w-auto md:gap-7">
           <a v-for="item in navigation" :key="item.id" :href="`#${item.id}`" @click="scrollToSection($event, item.id)" class="inline-flex min-h-11 items-center text-sm font-medium text-slate-600 transition-colors hover:text-electric-700">{{ item.label }}</a>
         </nav>

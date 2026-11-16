@@ -1,9 +1,5 @@
 # Development and release policy
 
-Nicholas confirmed that Vercel's Auto-assign Custom Production Domains setting is disabled. Keep that manual promotion gate disabled. Never promote, alias, or otherwise publish a deployment to the production domain without Nicholas's explicit go-live instruction. Never run `vercel --prod` or change production domain settings to bypass the gate.
+Nicholas authorized the latest Technical Customer Success design as the sole production homepage on November 15, 2026. The only page is `/`; retired draft routes redirect to it. Do not reintroduce parking pages or alternate versions.
 
-Work on feature branches and open pull requests into `main`. Automatic Vercel preview builds are authorized; they are for review and must not replace the deployment serving the public domain. Supply the preview URL and the result of the `Site build` check. Do not merge a PR without Nicholas's instruction. Do not enable GitHub auto-merge.
-
-The public domain must keep its parking page until Nicholas authorizes a replacement. Keep `/` and `/eng` parked in this draft. Nicholas authorized a dedicated Technical Customer Success page at `/cs` on the preview branch on November 14, 2026. This does not authorize production promotion. Use `/dev-preview` for the writing scaffold on local and Vercel preview deployments. Do not put a `/dev-preview` URL on the production domain without explicit authorization.
-
-Run `npm run build` before submitting a change. GitHub Actions runs the same build on pull requests and main. Do not add publishing credentials or deployment commands to CI. Preserve the descriptive writing placeholders until Nicholas supplies or requests finished prose.
+Keep `main` as the canonical branch. Use short-lived feature branches and pull requests for future changes, and delete them after merge. Run `npm run build` before submitting changes. Do not merge or promote future changes without Nicholas’s explicit instruction; this release is authorized. Preserve the manual Vercel production promotion gate.
