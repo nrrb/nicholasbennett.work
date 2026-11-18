@@ -6,7 +6,6 @@ const contact = {
   email: 'nicholas@nicholasbennett.work',
   linkedin: 'https://www.linkedin.com/in/nicholasrrbennett/',
   github: 'https://github.com/nrrb',
-  resume: '/resumes/Nicholas_Bennett_CSM_Resume_Nov2026.pdf',
 }
 const navigation = [
   { label: 'About', id: 'about' },
@@ -102,7 +101,6 @@ useHead({
           <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">I’ve built customer-facing software and helped people through the moments when technology lets them down. Now I’m bringing that engineering depth into Customer Success to help customers understand the product, overcome obstacles, and thrive with it.</p>
           <div class="mt-8 flex flex-wrap gap-3">
             <a href="#case-studies" @click="scrollToSection($event, 'case-studies')" class="inline-flex min-h-12 items-center gap-3 rounded-lg bg-electric-600 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-electric-700">View Case Studies <svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m7 10 5 5 5-5M12 4v11" /></svg></a>
-            <a :href="contact.resume" download class="inline-flex min-h-12 items-center rounded-lg border border-solid border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-electric-600 hover:text-electric-700">Read my resume.</a>
           </div>
           <p class="mt-6 text-sm text-slate-500">Former Software Engineer, CyberMaxx · Baltimore, MD</p>
         </div>
