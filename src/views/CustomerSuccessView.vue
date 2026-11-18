@@ -34,10 +34,19 @@ const cases = [
     outcome: 'Her data was recovered, and she returned to work with stronger safeguards. She began requesting me by name and praising our team. Colleagues trusted me with more sensitive cases and VIP support.',
     tags: ['Escalation ownership', 'Calm communication', 'Lasting relationships'],
   },
+  {
+    number: '03', category: 'Workflow improvement', title: 'Less administration. Fair matching.', product: 'Kellogg School of Management · Board Fellows Internship Matcher', wide: true,
+    challenge: 'The Board Fellows program needed a fair way to match MBA students to corporate board internships based on their ranked preferences.',
+    intervention: 'I built the Board Fellows Internship Matcher web app to process student preferences and handle the matching process.',
+    outcome: 'The app saved an administrator days of work each year while supporting fair matching based on students’ ranked preferences.',
+    tags: ['Process improvement', 'Web application development', 'Fair matching'],
+  },
 ]
 const skills = [
   { label: 'Technical fluency', title: 'I can get to the root of it.', description: 'I follow symptoms through APIs, logs, and code, then work with engineering on a clear next step.', badges: ['Cybersecurity & SaaS', 'API troubleshooting', 'Python & JavaScript', 'SQL & data investigation', 'AWS & Linux', 'Salesforce investigation', 'ServiceNow implementation'] },
   { label: 'Customer enablement', title: 'I make the next step understandable.', description: 'I adapt to the person’s goals and technical comfort, explain the plan, and communicate early when something changes.', badges: ['Stakeholder communication', 'Needs discovery', 'Escalation coordination', 'Reproduction & documentation', 'Customer validation', 'CS–engineering collaboration', 'User education'] },
+  { label: 'AI tools and integration', title: 'I build with AI.', description: 'Extensive professional and personal experience with Claude Code and OpenAI Codex, plus hands-on experience integrating AI APIs into applications.', badges: ['Claude Code', 'OpenAI Codex', 'AI API integration', 'Rapid prototyping'] },
+  { label: 'Research data', title: 'Make complex data usable.', description: 'At Northwestern’s SONIC research lab, I partnered with a postdoctoral researcher on an ETL pipeline for hundreds of millions of Chinese MMORPG records. I resolved Chinese character-encoding issues while processing a terabyte-scale database into formats researchers could use.', badges: ['ETL pipelines', 'Character encoding', 'Terabyte-scale data'] },
 ]
 const approach = [
   { title: 'Start with their work.', text: 'At Kellogg, I helped three faculty considering a $20K workstation find a better fit in AWS research computing. I started with their research needs, then worked with specialists to support their move.' },
@@ -113,16 +122,17 @@ useHead({
         <div class="flex flex-col gap-6 text-base leading-relaxed text-slate-600">
           <p>I put myself in the customer’s shoes. I want to understand what matters to them, explain the next step in their language, and make it easier to get back to their work.</p>
           <p>Customer Success is a deliberate choice. Empathy is the skill I most enjoy practicing, followed by problem solving. I want to bring both to lasting customer relationships, backed by the technical depth to work closely with engineering.</p>
+          <p>I don’t like to sit idle. I’m always spotting inefficiencies, testing ideas, and turning successful experiments into tools people can depend on. When the evidence points toward a better solution, I change direction.</p>
         </div>
       </section>
 
       <section id="case-studies" tabindex="-1" aria-labelledby="cases-title" class="scroll-mt-40 border-y border-solid border-slate-200 bg-white px-6 py-16 md:scroll-mt-24 lg:px-8 lg:py-24">
         <div class="mx-auto max-w-6xl"><div class="max-w-2xl"><p class="mb-4 text-xs font-bold uppercase tracking-widest text-electric-700">Selected work</p><h2 id="cases-title" class="m-0 text-3xl font-semibold tracking-tight sm:text-4xl">Technical work.<br />Customer-facing value.</h2><p class="mt-5 text-base leading-relaxed text-slate-600">From a reporting defect affecting hundreds of accounts to one person facing a crisis, I take concerns seriously and stay involved through the finish line.</p></div>
           <div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
-            <article v-for="study in cases" :key="study.number" class="flex flex-col rounded-2xl border border-solid border-slate-200 bg-white p-6 sm:p-8">
+            <article v-for="study in cases" :key="study.number" class="flex flex-col rounded-2xl border border-solid border-slate-200 bg-white p-6 sm:p-8" :class="study.wide ? 'lg:col-span-2' : ''">
               <div class="flex items-center justify-between gap-4"><p class="text-xs font-semibold uppercase tracking-widest text-electric-700">{{ study.category }}</p><span class="text-sm font-medium text-slate-400">{{ study.number }}</span></div>
               <h3 class="mb-3 mt-5 text-2xl font-semibold leading-tight tracking-tight text-slate-900">{{ study.title }}</h3><p class="mb-7 text-xs font-medium text-slate-500">{{ study.product }}</p>
-              <dl class="m-0 space-y-6"><div><dt class="text-sm font-semibold text-slate-900">The challenge</dt><dd class="m-0 mt-2 text-sm leading-7 text-slate-600">{{ study.challenge }}</dd></div><div><dt class="text-sm font-semibold text-slate-900">What I did</dt><dd class="m-0 mt-2 text-sm leading-7 text-slate-600">{{ study.intervention }}</dd></div><div class="rounded-xl border border-solid border-electric-100 bg-electric-50 p-5"><dt class="text-sm font-semibold text-electric-700">What changed</dt><dd class="m-0 mt-2 text-sm leading-7 text-slate-700">{{ study.outcome }}</dd></div></dl>
+              <dl class="m-0" :class="study.wide ? 'grid grid-cols-1 gap-6 md:grid-cols-3' : 'space-y-6'"><div><dt class="text-sm font-semibold text-slate-900">The challenge</dt><dd class="m-0 mt-2 text-sm leading-7 text-slate-600">{{ study.challenge }}</dd></div><div><dt class="text-sm font-semibold text-slate-900">What I did</dt><dd class="m-0 mt-2 text-sm leading-7 text-slate-600">{{ study.intervention }}</dd></div><div class="rounded-xl border border-solid border-electric-100 bg-electric-50 p-5"><dt class="text-sm font-semibold text-electric-700">What changed</dt><dd class="m-0 mt-2 text-sm leading-7 text-slate-700">{{ study.outcome }}</dd></div></dl>
               <div class="mt-6 flex flex-wrap gap-2"><span v-for="tag in study.tags" :key="tag" class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">{{ tag }}</span></div>
             </article>
           </div>
